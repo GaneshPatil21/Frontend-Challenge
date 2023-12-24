@@ -1,0 +1,44 @@
+.financial-info-container {
+    font-family: 'Manrope', sans-serif; /* Replace with your font */
+    max-width: 800px; /* Or the width of your preference */
+    margin: auto;
+    padding: 20px;
+    /* color: #333;  */
+  }
+  
+  .financial-info h2 {
+    color: #011638; /* Replace with color from your design system */
+    margin-bottom: 20px;
+    font-size: 24px; /* Replace with font-size from your design system */
+  }
+  
+  .form-section {
+    background-color: #EAE0D5; /* Replace with color from your design system */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .section-header {
+    font-size: 18px; /* Replace with font-size from your design system */
+    margin-bottom: 15px;
+    font-weight: 600; /* Replace with font-weight from your design system */
+  }
+  
+  .interests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* You can adjust this gap to control the spacing between buttons */
+  }
+  
+  /* Add additional responsive styles if necessary */
+  @media (max-width: 768px) {
+    .financial-info-container {
+      padding: 10px;
+    }
+  
+    .interests {
+      justify-content: center;
+    }
+  }
+  

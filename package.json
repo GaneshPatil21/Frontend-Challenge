@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+
+    "build": "esbuild src/App.js --bundle --minify --sourcemap --outfile=public/bundle.js --loader:.js=jsx",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

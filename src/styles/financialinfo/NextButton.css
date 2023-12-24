@@ -1,0 +1,11 @@
+.next-btn {
+    background-color: green; /* Placeholder color, replace with actual */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px; /* Space from the last form section */
+  }
+  

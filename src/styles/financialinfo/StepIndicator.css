@@ -1,0 +1,23 @@
+.steps {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .step {
+    margin-right: 5px;
+    padding: 5px;
+    font-weight: bold;
+    color: grey; /* Placeholder color, replace with actual */
+  }
+  
+  .current {
+    color: blue; /* Placeholder color, replace with actual */
+  }
+  
+  .divider {
+    flex-grow: 1;
+    border-top: 2px dashed grey; /* Placeholder color, replace with actual */
+    margin: 0 10px;
+  }
+  
