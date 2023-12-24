@@ -1,0 +1,110 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container styles */
+.container {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 100vw;
+  height: 90vh;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #eef0f2;
+  height: 10vh;
+  min-height: 48.09px;
+  padding-left: 36px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container h5 {
+  padding-left: 10px;
+  color: #0057da;
+  font-family: "Manrope";
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/* Main content styles */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Intro section styles */
+.intro {
+  margin-bottom: 20px;
+}
+
+.intro h2 {
+  text-align: left;
+}
+
+/* Form styles */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  gap: 8px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  gap: 16px;
+  margin-bottom: 10px;
+  padding: 0px, 16px, 0px, 16px;
+  gap: 8px;
+}
+
+.signup-form input,
+.signup-form button {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #eef0f2;
+}
+
+.signup-form button {
+  background-color: #0057da;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .intro h2 {
+    font-size: 1.25rem;
+  }
+}
