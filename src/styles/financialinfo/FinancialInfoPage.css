@@ -9,10 +9,11 @@
 .financial-info-header {
   background-color: #EEF0F2;
   height: 150px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
 }
   .financial-info-h2 {
     display: flex;
@@ -22,6 +23,7 @@
     margin-bottom: 4vw;
     font-size: 26px;
     font-weight: 800;
+    text-align: center;
   }
 
   .financial-info-container {
