@@ -1,8 +1,7 @@
-.intro {
-  margin-bottom: 20px;
+.signup-intro {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 35px;
 }
 
-.intro h2 {
-  text-align: center;
-  color: #272b4f;
-}

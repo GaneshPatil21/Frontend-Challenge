@@ -1,26 +1,35 @@
-/* Header styles */
-.header {
+/* Signup Header styles */
+.signup-header {
   display: flex;
   align-items: center;
   background-color: #eef0f2;
-  height: 10vh;
+  height: 12vh;
   min-height: 48.09px;
   padding-left: 36px;
 }
 
-.logo-container {
+.signup-logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.logo-container h5 {
-  padding-left: 10px;
-  color: #0057da;
-  font-family: "Manrope";
+.signup-logo-container span {
+  padding-left: 12px;
+  color: #0057DA;
   font-size: 23px;
   font-weight: 800;
-  line-height: 31px;
-  letter-spacing: 0em;
-  text-align: left;
+}
+
+.compound-logo-image {
+  width: 42px;
+  height: 40px;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .signup-header {
+    justify-content: center;
+    padding-left: 0px;
+  }
 }

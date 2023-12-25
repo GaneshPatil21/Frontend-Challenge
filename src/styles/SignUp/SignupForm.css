@@ -2,19 +2,21 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 400px;
-  gap: 8px;
+  max-width: 500px;
 }
 
-.form-group {
+.signup-form-group {
   display: flex;
   flex-direction: column;
   text-align: left;
   width: 100%;
-  gap: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding: 0px, 16px, 0px, 16px;
   gap: 8px;
+}
+
+.signup-form-group label {
+  font-weight: 600;
 }
 
 .signup-form input,
@@ -24,6 +26,9 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   background: #eef0f2;
+  border: none;
+  height: 45px;
+  margin-bottom: 15px;
 }
 
 .signup-form button {
@@ -31,4 +36,7 @@
   color: white;
   border: none;
   cursor: pointer;
+  margin-top: 15px;
+  font-weight: 800;
+  font-size: 16px;
 }

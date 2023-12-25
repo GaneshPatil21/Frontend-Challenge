@@ -3,14 +3,14 @@ import Star from "../../assets/Star.png";
 import "../../styles/SignUp/Header.css";
 
 const Header = () => {
-  return (
-    <div className="header">
-      <div className="logo-container">
-        <img width="48" height="48" src={Star} alt="Example" />
-        <h5>Compound</h5>
-      </div>
-    </div>
-  );
+    return (
+        <div className="signup-header">
+            <div className="signup-logo-container">
+                <img src={Star} alt="Example" className="compound-logo-image" />
+                <span>Compound</span>
+            </div>
+        </div>
+    );
 };
 
 export default Header;
