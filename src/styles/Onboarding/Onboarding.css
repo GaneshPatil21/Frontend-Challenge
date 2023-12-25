@@ -1,51 +1,146 @@
-.container {
-  font-family: "Open Sans", sans-serif;
-  color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  width: 100vw;
-  height: 90vh;
+
+.onboarding-page {
+    margin: auto;
 }
 
-.subcontainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
+.onboarding-header {
+    background-color: #EEF0F2;
+    height: 21vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.label {
-  /* font-family: Manrope; */
-  font-size: 19px;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #272b4f;
+.onboarding-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.labelContainer {
-  width: 34vw;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.onboarding-message-1 {
+    /* width: 28%; */
+    width: 400px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-.labelContainer2 {
-  width: 40vw;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.onboarding-message-2 {
+    /* width: 35%; */
+    width: 500px;
+    padding: 10px;
+}
+  
+.dashboard-button {
+    padding: 16px;
+    margin-top: 25px;
+    border-radius: 8px;
+    background-color: #0057da;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 258px;
+    font-size: 16px;
+    font-weight: 800;
 }
 
-.button {
-  padding: 16px;
-  margin-top: 20px;
-  border-radius: 8px;
-  background-color: #0057da;
-  color: white;
-  border: none;
-  cursor: pointer;
-  width: 258px;
+.onboarding-images-container {
+    height: 220px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.9); 
+    
+}
+
+.shield-image-container {
+    width: 200px;
+    height: 200px;
+    position: relative; 
+}
+
+
+.verified-image-container {
+    position: absolute; 
+    top: -10px; 
+    right: -10px; 
+    width: 65px;
+    height: 65px;
+    background-color: #0057DA;
+    border-radius: 14px;
+}
+
+.verified-image{
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.leftwing-image-container {
+    width: 250px;
+    height: 100%;
+}
+
+.leftwing-image {
+    width: 120%;
+    height: 100%;
+    margin-top: -30px;
+}
+
+.rightwing-image-container {
+    width: 250px;
+    height: 100%;
+}
+
+.rightwing-image {
+    width: 120%;
+    height: 100%;
+    margin-top: -30px;
+    margin-left: -30px;
+    transform: scaleX(-1) rotate(-10deg);
+    transform-origin: center center;
+
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+
+    .onboarding-images-container {
+        transform: scale(0.75); 
+    }
+
+    .onboarding-message-1 {
+        width: 100%;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    
+    .onboarding-message-2 {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .dashboard-button {
+        margin-bottom: 25px;
+    }
+
+    .shield-image {
+        width: 175px;
+        height: 175px;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .rightwing-image {
+        margin-left: -5px;
+    }
+    .leftwing-image {
+        margin-left: -10px;
+    }
 }

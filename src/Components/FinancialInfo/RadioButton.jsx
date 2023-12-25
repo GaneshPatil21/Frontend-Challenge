@@ -4,7 +4,9 @@ import "../../styles/financialinfo/RadioButton.css";
 const RadioButton = ({ name, options, ...rest }) => {
     return (
         <div className="form-group">
-            <span className="sub-title">Relationship Status</span>
+            <div className="sub-title">
+                <span>Relationship Status</span>
+            </div>
             {options.map((option) => (
                 <label key={option.value}>
                     <input
