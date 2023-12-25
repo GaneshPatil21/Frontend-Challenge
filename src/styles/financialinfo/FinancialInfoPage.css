@@ -48,7 +48,6 @@
     background-color: #EEF0F2; /* Color of the line */
     z-index: 1;
   }
-  
 
   .form-section-2 {
     width: 130%;
@@ -84,8 +83,7 @@
   font-weight: 800;
 }
 
-  /* Add additional responsive styles if necessary */
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .financial-info-container {
       padding: 10px;
     }
@@ -93,5 +91,42 @@
     .interests {
       justify-content: center;
     }
+  } */
+
+
+  /* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .financial-info-container {
+    flex-direction: column; /* Change to vertical layout */
   }
+
+  .form-section-1,
+  .form-section-2 {
+    width: 100%; /* Full width for mobile */
+    margin: 4% 0; /* Adjust margin for mobile, remove side margins */
+    margin-left: 0px;
+    padding-left: 20px;
+  }
+
+  .form-section-1::after {
+    display: none; /* Hide the vertical line in mobile view */
+  }
+
+  .interests {
+    margin-top: 25px;
+    justify-content: center; /* Center the interests buttons */
+    gap: 10px; /* Adjust gap for smaller screens */
+  }
+
+  .financial-info-next {
+    justify-content: center; /* Center the next button */
+    padding-right: 0; /* Remove padding */
+    margin-bottom: 15px;
+  }
+
+
+  /* Adjust other styles as needed for mobile view */
+}
+
+
   

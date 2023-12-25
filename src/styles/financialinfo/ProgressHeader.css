@@ -24,3 +24,16 @@
     font-weight: 800;
   }
   
+
+  @media (max-width: 430px) {
+    .step-name-1 {
+      margin-left: -15px;
+    }
+    .step-name-2 {
+      margin-left: 15px;
+    }
+    .step-name-3 {
+      margin-right: -45px;
+    }
+
+  }
