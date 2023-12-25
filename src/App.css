@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Manrope', sans-serif;
+  color: #272B4F;
+}
+
 /* Container styles */
 .container {
   font-family: "Open Sans", sans-serif;

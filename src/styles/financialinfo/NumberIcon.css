@@ -1,0 +1,12 @@
+.number-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px; /* Customize size as needed */
+    height: 27px; /* Customize size as needed */
+    border: 2px solid #272B4F; /* Customize color as needed */
+    border-radius: 8px; /* Adjust for square with slightly rounded corners */
+    z-index: 1; 
+    margin-right: 15px;
+    font-weight: 500;
+  }

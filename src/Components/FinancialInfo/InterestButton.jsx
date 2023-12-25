@@ -1,5 +1,8 @@
+// InterestButton.jsx
 import React, { useState } from "react";
 import "../../styles/financialinfo/InterestButton.css";
+import plusIcon from "../../assets/plus-icon.png";
+import minusIcon from "../../assets/minus-icon.png"; // Adjust the path as necessary
 
 const InterestButton = ({ label }) => {
     const [isActive, setIsActive] = useState(false);
@@ -10,19 +13,20 @@ const InterestButton = ({ label }) => {
 
     return (
         <button
-            className={`interest ${isActive ? 'active' : ''}`}
+            className={`interest ${isActive ? "active" : ""}`}
             onClick={handleClick}
         >
-            {isActive ? label + " -" : label + " +"}
+            {label}
+            <img
+                src={isActive ? minusIcon : plusIcon}
+                alt={isActive ? "Minus" : "Plus"}
+                className="img-plus-minus"
+            />
         </button>
     );
 };
 
 export default InterestButton;
-
-
-
-
 
 // import React from "react";
 // import "../../styles/financialinfo/InterestButton.css";

@@ -1,23 +1,75 @@
-.steps {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .step {
-    margin-right: 5px;
-    padding: 5px;
-    font-weight: bold;
-    color: grey; /* Placeholder color, replace with actual */
-  }
-  
-  .current {
-    color: blue; /* Placeholder color, replace with actual */
-  }
-  
-  .divider {
-    flex-grow: 1;
-    border-top: 2px dashed grey; /* Placeholder color, replace with actual */
-    margin: 0 10px;
-  }
-  
+
+/* StepIndicator.css */
+.step-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distributes space between elements */
+  position: relative;
+  padding: 0 13%; /* Add padding on sides if needed */
+  width: 100vw;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.step-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  color: white;
+  background-color: #272B4F;
+  z-index: 1;
+}
+
+.active-step .step-icon {
+  background-color: #0057DA; /* Active icon background color */
+  color: white;
+  border: none; /* Optional: remove the border if the background is blue */
+}
+
+.active-step {
+  padding: 2px; /* Spacing for the blue border */
+  border: 2px solid #0057DA; /* Blue border for the active step */
+  border-radius: 10px; /* Slightly larger radius to account for the inner icon's radius */
+}
+
+.step-line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #272B4F; /* Default to inactive color */
+  margin: 2px; /* Adjust spacing around the lines */
+}
+
+.step-line.dotted {
+
+  background: none;
+  height: 2px; 
+  border: none;
+  border-radius: 1px; 
+  background: repeating-linear-gradient(90deg, #7D7E80, #7D7E80 8px, transparent 8px, transparent 13px);
+
+}
+
+.step-line.solid {
+  background-color: #272B4F; /* Active color */
+}
+
+.step-label {
+  text-align: center;
+  font-size: 14px; /* Customize size as needed */
+  margin-top: 8px; /* Space between icon and label */
+}
+
+.step-completed-icon {
+  width: 100%; /* Make it fill the container */
+  height: auto; /* Maintain aspect ratio */
+}

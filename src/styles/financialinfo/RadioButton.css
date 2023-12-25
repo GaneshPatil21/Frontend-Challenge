@@ -1,0 +1,14 @@
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.sub-title {
+  margin-bottom: 6px;
+}
+
+.form-group input[type="radio"] {
+  margin-right: 10px;
+}
+  

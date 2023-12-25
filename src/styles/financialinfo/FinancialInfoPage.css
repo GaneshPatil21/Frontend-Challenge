@@ -1,36 +1,87 @@
-.financial-info-container {
+
+/* FinancialInfoPage.js */
+
+.financial-info-page {
     font-family: 'Manrope', sans-serif; /* Replace with your font */
-    max-width: 800px; /* Or the width of your preference */
     margin: auto;
-    padding: 20px;
-    /* color: #333;  */
+  }
+
+.financial-info-header {
+  background-color: #EEF0F2;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+  .financial-info-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    font-size: 26px;
+    font-weight: 800;
+  }
+
+  .financial-info-container {
+    display: flex;
+  }
+
+  .form-section-1 {
+    width: 70%;
+    margin: 8%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    position: relative; /* Required for the pseudo-element positioning */
   }
   
-  .financial-info h2 {
-    color: #011638; /* Replace with color from your design system */
-    margin-bottom: 20px;
-    font-size: 24px; /* Replace with font-size from your design system */
+  .form-section-1::after {
+    content: '';
+    position: absolute;
+    right: -20%; /* Adjust this value to position the line correctly */
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Thickness of the line */
+    background-color: #EEF0F2; /* Color of the line */
+    z-index: 1;
   }
   
-  .form-section {
-    background-color: #EAE0D5; /* Replace with color from your design system */
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 30px;
+
+  .form-section-2 {
+    width: 130%;
+    margin: 8%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-right: 5%;
   }
   
   .section-header {
+    display: flex;
     font-size: 18px; /* Replace with font-size from your design system */
     margin-bottom: 15px;
     font-weight: 600; /* Replace with font-weight from your design system */
   }
   
   .interests {
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* You can adjust this gap to control the spacing between buttons */
+    gap: 20px; 
   }
   
+.financial-info-next {
+  display: flex;
+  justify-content: right;
+  padding-right: 5%;
+  padding-top: 0px;
+}
+
+.section-header span {
+  font-size: 18px;
+  font-weight: 800;
+}
+
   /* Add additional responsive styles if necessary */
   @media (max-width: 768px) {
     .financial-info-container {

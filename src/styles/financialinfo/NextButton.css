@@ -1,11 +1,12 @@
 .next-btn {
-    background-color: green; /* Placeholder color, replace with actual */
+    background-color: #0057DA; /* Placeholder color, replace with actual */
     color: white;
     border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
     border-radius: 4px;
-    margin-top: 20px; /* Space from the last form section */
+    margin-top: 10px;
+    width: 120px;
   }
   

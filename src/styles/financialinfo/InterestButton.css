@@ -1,32 +1,43 @@
+/* InterestButton.css */
 
 .interest {
-    background-color: lightgrey; /* Light grey color */
-    color: black;
+    display: flex;
+    align-items: center;
+    background-color: #EEF0F2; /* Light grey color */
     border: 1px solid transparent; /* Makes it easy to transition to blue border */
-    padding: 10px 15px;
-    margin-right: 10px;
+    padding: 12px 20px;
     cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s, border 0.3s; /* Smooth transition for color and border */
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s, border 0.3s; 
+    font-size: 14px;
   }
   
   .interest.active {
-    background-color: blue; /* Blue color when active */
+    background-color: #0057DA; /* Blue color when active */
     color: white;
-    border: 1px solid blue; /* Blue border to match background */
+    border: 1px solid #0057DA; /* Blue border to match background */
+  }
+
+  .img-plus-minus {
+    margin-left: 8px;
+    width: 12px;
+    height: 12px;
   }
   
   /* Optionally, add styles for focus and hover states */
   .interest:focus,
   .interest:hover {
     outline: none; /* Removes the default focus outline */
-    background-color: #b0c4de; /* Lighter shade for hover/focus */
+    /* background-color: #0057DA;  */
+    border: 1px solid #0057DA;
   }
   
   .interest.active:focus,
   .interest.active:hover {
     background-color: #4169e1; /* Darker shade for active button hover/focus */
   }
+
+
   
 
 
