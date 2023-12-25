@@ -1,10 +1,10 @@
 import React from "react";
-import "./App.css";
+import "../../styles/SignUp/IntroSection.css";
 
-const IntroSection = () => {
+const IntroSection = ({ text }) => {
   return (
     <section className="intro">
-      <h2>Your start to financial literacy.</h2>
+      <h2>{text}</h2>
     </section>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "../../styles/SignUp/SignupForm.css";
 
 const SignupForm = () => {
   return (
@@ -9,7 +9,7 @@ const SignupForm = () => {
         <input type="email" placeholder="Enter email address" />
       </div>
       <div className="form-group">
-        <label>Passwordww</label>
+        <label>Password</label>
         <input type="password" placeholder="Enter password" />
       </div>
       <button>Sign up now</button>

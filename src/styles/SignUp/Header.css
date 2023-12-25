@@ -1,0 +1,26 @@
+/* Header styles */
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #eef0f2;
+  height: 10vh;
+  min-height: 48.09px;
+  padding-left: 36px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container h5 {
+  padding-left: 10px;
+  color: #0057da;
+  font-family: "Manrope";
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+}
