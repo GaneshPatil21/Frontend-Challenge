@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/financialinfo/RadioButton.css";
+import "../../Styles/financialinfo/RadioButton.css";
 import { useGlobalContext } from "../../Context/GlobalContext";
 
 const RadioButton = ({ name, options, ...rest }) => {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../styles/SignUp/SignupForm.css";
+import "../../Styles/SignUp/SignupForm.css";
 import { useNavigate } from "react-router-dom";
 import { useGlobalContext } from "../../Context/GlobalContext";
 

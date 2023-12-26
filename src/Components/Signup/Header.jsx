@@ -1,6 +1,6 @@
 import React from "react";
 import Star from "../../assets/Star.png";
-import "../../styles/SignUp/Header.css";
+import "../../Styles/SignUp/Header.css";
 
 const Header = () => {
     return (

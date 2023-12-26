@@ -4,7 +4,7 @@ import IntroSection from "../Components/Signup/IntroSection";
 import Sheild from "../assets/Sheild.png";
 import verified from "../assets/verified.png";
 import LeftWing from "../assets/LeftWing.svg";
-import "../styles/Onboarding/Onboarding.css";
+import "../Styles/Onboarding/Onboarding.css";
 import { useGlobalContext } from "../Context/GlobalContext";
 
 function Onboarding() {

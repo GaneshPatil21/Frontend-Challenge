@@ -6,7 +6,7 @@ import RadioButton from "../Components/FinancialInfo/RadioButton";
 import InterestButton from "../Components/FinancialInfo/InterestButton";
 import NextButton from "../Components/FinancialInfo/NextButton";
 import NumberIcon from "../Components/FinancialInfo/NumberIcon";
-import "../styles/financialinfo/FinancialInfoPage.css";
+import "../Styles/financialinfo/FinancialInfoPage.css";
 import { useGlobalContext } from "../Context/GlobalContext";
 
 function FinancialInfoPage() {

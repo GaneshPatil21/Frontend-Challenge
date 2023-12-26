@@ -1,6 +1,6 @@
 // InterestButton.jsx
 import React, { useState } from "react";
-import "../../styles/financialinfo/InterestButton.css";
+import "../../Styles/financialinfo/InterestButton.css";
 import plusIcon from "../../assets/plus-icon.png";
 import minusIcon from "../../assets/minus-icon.png";
 import { useGlobalContext } from "../../Context/GlobalContext";

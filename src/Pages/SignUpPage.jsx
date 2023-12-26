@@ -4,7 +4,7 @@ import React from "react";
 import Header from "../Components/Signup/Header";
 import IntroSection from "../Components/Signup/IntroSection";
 import SignupForm from "../Components/Signup/SignupForm";
-import "../styles/SignUp/SignUpPage.css"; // Import the CSS file
+import "../Styles/SignUp/SignUpPage.css"; // Import the CSS file
 import Purple from "../assets/Purple.png";
 import Red from "../assets/Red.png";
 import Yellow from "../assets/Yellow.png";

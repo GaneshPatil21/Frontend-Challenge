@@ -1,12 +1,8 @@
 import React from "react";
-import "../../styles/financialinfo/NumberIcon.css"; 
+import "../../Styles/financialinfo/NumberIcon.css";
 
 const NumberIcon = ({ no }) => {
-    return (
-        <div className="number-icon">
-            {no}
-        </div>
-    );
+    return <div className="number-icon">{no}</div>;
 };
 
 export default NumberIcon;

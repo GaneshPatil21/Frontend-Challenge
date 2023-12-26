@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/financialinfo/FormSelect.css";
+import "../../Styles/financialinfo/FormSelect.css";
 import { useGlobalContext } from "../../Context/GlobalContext";
 
 const FormSelect = ({ label, options, ...rest }) => {

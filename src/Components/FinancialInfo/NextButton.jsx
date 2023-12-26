@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../styles/financialinfo/NextButton.css";
+import "../../Styles/financialinfo/NextButton.css";
 import { useNavigate } from "react-router-dom";
 import { useGlobalContext } from "../../Context/GlobalContext";
 

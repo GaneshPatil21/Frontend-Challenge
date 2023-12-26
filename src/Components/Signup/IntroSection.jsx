@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/SignUp/IntroSection.css";
+import "../../Styles/SignUp/IntroSection.css";
 
 const IntroSection = ({ text }) => {
     return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/financialinfo/StepIndicator.css";
+import "../../Styles/financialinfo/StepIndicator.css";
 import completeIcon from "../../assets/complete.png"; // Adjust the path as necessary
 import completeIconFilled from "../../assets/complete-filled.png"; // Adjust the path as necessary
 
@@ -61,7 +61,7 @@ const StepIndicator = ({ currentStep }) => {
 export default StepIndicator;
 
 // import React from 'react';
-// import "../../styles/financialinfo/StepIndicator.css";
+// import "../../Styles/financialinfo/StepIndicator.css";
 // import completeIcon from '../../assets/complete.png'; // Adjust the path as necessary
 // import completeIconFilled from '../../assets/complete-filled.png'; // Adjust the path as necessary
 
