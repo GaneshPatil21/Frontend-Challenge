@@ -2,16 +2,22 @@
 
 import React from "react";
 import SignUpPage from "./Pages/SignUpPage";
-import Onboarding from "./Pages/Onboarding";
 import FinancialInfoPage from "./Pages/FinancialInfoPage";
+import Onboarding from "./Pages/Onboarding";
+import { Route, Routes } from "react-router-dom";
+import { ContextProvider } from "./Context/GlobalContext";
+
 import "./App.css";
 
 function App() {
     return (
-        <div>
-            {/* <Onboarding /> */}
-            <FinancialInfoPage />
-        </div>
+        <ContextProvider>
+            <Routes>
+                <Route path="/" element={<SignUpPage />} />
+                <Route path="/financial-info" element={<FinancialInfoPage />} />
+                <Route path="/onboarding" element={<Onboarding />} />
+            </Routes>
+        </ContextProvider>
     );
 }
 

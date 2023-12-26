@@ -5,8 +5,19 @@ import Sheild from "../assets/Sheild.png";
 import verified from "../assets/verified.png";
 import LeftWing from "../assets/LeftWing.svg";
 import "../styles/Onboarding/Onboarding.css";
+import { useGlobalContext } from "../Context/GlobalContext";
 
 function Onboarding() {
+    const { globalState, updateGlobalState } = useGlobalContext();
+
+    const handleSubmit = () => {
+        const { email, income, relationshipStatus, interests } = globalState;
+
+        alert(
+            `Global State Variables:\nEmail: ${email}\nIncome: ${income}\nRelationship Status: ${relationshipStatus}\nInterests: ${interests}`
+        );
+    };
+
     return (
         <div className="onboarding-page">
             <div className="onboarding-header">
@@ -71,7 +82,9 @@ function Onboarding() {
                     </span>
                 </div>
 
-                <button className="dashboard-button">Go to Dashboard</button>
+                <button onClick={handleSubmit} className="dashboard-button">
+                    Go to Dashboard
+                </button>
             </div>
         </div>
     );

@@ -1,7 +1,14 @@
 import React from "react";
 import "../../styles/financialinfo/RadioButton.css";
+import { useGlobalContext } from "../../Context/GlobalContext";
 
 const RadioButton = ({ name, options, ...rest }) => {
+    const { globalState, updateGlobalState } = useGlobalContext();
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        updateGlobalState(name, value);
+    };
     return (
         <div className="form-group">
             <div className="sub-title">
@@ -13,6 +20,7 @@ const RadioButton = ({ name, options, ...rest }) => {
                         type="radio"
                         name={name}
                         value={option.value}
+                        onChange={handleChange}
                         defaultChecked={option.value === "single"}
                         {...rest}
                     />

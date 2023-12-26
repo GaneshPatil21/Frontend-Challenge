@@ -7,8 +7,12 @@ import InterestButton from "../Components/FinancialInfo/InterestButton";
 import NextButton from "../Components/FinancialInfo/NextButton";
 import NumberIcon from "../Components/FinancialInfo/NumberIcon";
 import "../styles/financialinfo/FinancialInfoPage.css";
+import { useGlobalContext } from "../Context/GlobalContext";
 
 function FinancialInfoPage() {
+    const { globalState, updateGlobalState } = useGlobalContext();
+    const { formError } = globalState;
+
     const incomeOptions = [
         { value: "", label: "Select" },
         { value: "0-50000", label: "Below 50,000" },
@@ -25,11 +29,15 @@ function FinancialInfoPage() {
         },
     ];
 
+    // Get interests from import.meta.env
+    const interests = import.meta.env.VITE_INTERESTS
+        ? import.meta.env.VITE_INTERESTS.split(",")
+        : [];
+
     return (
         <div className="financial-info-page">
             <div className="financial-info-header">
                 <div>
-                    {/* <StepIndicator steps={steps} currentStep={2} /> */}
                     <ProgressHeader currentStep={2} />
                 </div>
             </div>
@@ -38,7 +46,11 @@ function FinancialInfoPage() {
                     Tell us a little more about your financial personality
                 </span>
             </div>
-
+            <div>
+                {formError && (
+                    <div className="finance-form-error">{formError}</div>
+                )}
+            </div>
             <div className="financial-info-container">
                 <div className="form-section-1">
                     <div className="section-header">
@@ -50,7 +62,7 @@ function FinancialInfoPage() {
                     <FormSelect label="Income" options={incomeOptions} />
                     <RadioButton
                         label="Income"
-                        name="relationship_status"
+                        name="relationshipStatus"
                         options={relationshipOptions}
                     />
                 </div>
@@ -63,14 +75,9 @@ function FinancialInfoPage() {
                         <span>My Financial Interests</span>
                     </div>
                     <div className="interests">
-                        <InterestButton label="Budgeting" />
-                        <InterestButton label="Investing" />
-                        <InterestButton label="Client Management" />
-                        <InterestButton label="Debt Management" />
-                        <InterestButton label="Retirement Planning" />
-                        <InterestButton label="Tax Planning" />
-                        <InterestButton label="Goal Setting" />
-                        <InterestButton label="Estate Planning" />
+                        {interests.map((interest, index) => (
+                            <InterestButton key={index} label={interest} />
+                        ))}
                     </div>
                 </div>
             </div>
